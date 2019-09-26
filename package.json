@@ -4,21 +4,16 @@
   "description": "Personal website of Talwinder Singh",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "start": "npm-run-all --parallel dev scss",
     "build": "webpack --env.NODE_ENV=development --mode development",
-    "build:prod": "webpack --env.NODE_ENV=production --mode production",
-    "watch": "webpack --env.NODE_ENV=development --watch --mode development",
-    "lib": "npm run clean && babel src -d lib && npm run copy-sass ",
-    "clean": "mkdir lib",
-    "prepublish": "npm run lib"
+    "build:prod": "webpack --env.NODE_ENV=production --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codemongerr/site.git"
+    "url": "git+https://github.com/codemongerr/portfolio.github.io.git"
   },
   "author": "Talwinder Singh",
   "license": "MIT",
-  "homepage": "https://codemongerr.github.io/site",
+  "homepage": "https://talwindersingh.online",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
