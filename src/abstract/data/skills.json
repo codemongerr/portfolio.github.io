@@ -2,41 +2,42 @@
   {
     "title": "front-end",
     "list": [
-      "HTML5", 
-      "CSS", 
+      "HTML5",
+      "CSS",
       "ReactJS",
-      "Vue.js", 
-      "JavaScript", 
-      "BEM", 
-      "SASS", 
-      "Twitter bootstrap", 
-      "Responsive web design", 
-      "Atomic design", 
+      "Vue.js",
+      "JavaScript",
+      "BEM",
+      "SASS",
+      "Twitter bootstrap",
+      "Responsive web design",
+      "Atomic design",
       "jQuery"
     ]
   },
   {
     "title": "back-end",
     "list": [
-      "API integration",
-      "PHP", 
-      "MySQL", 
-      "MongoDB", 
-      "SilverStripe", 
-      "Laravel", 
+      "API development and integration",
+      "PHP",
+      "MySQL",
+      "MongoDB",
+      "SilverStripe",
+      "Laravel",
       "Doctrine"
     ]
   },
   {
     "title": "tools",
     "list": [
-      "VS Code", 
-      "Jira", 
-      "Slack", 
-      "GIT", 
-      "GitHub", 
-      "Terminal", 
-      "Webpack", 
+      "Ansible",
+      "VS Code",
+      "Jira",
+      "Slack",
+      "GIT",
+      "GitHub",
+      "Terminal",
+      "Webpack",
       "Adobe XD, Photoshop, Illustrator"
     ]
   }

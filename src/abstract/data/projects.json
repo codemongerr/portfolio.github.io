@@ -1,5 +1,12 @@
 [
   {
+    "id": 5,
+    "title": "resbook",
+    "infoText": "resbook.com",
+    "uri": "https://www.resbook.com",
+    "description": "New Zealand owned and operated cloud based reservation management system designed specifically for accommodation providers and Property Managers worldwide."
+  },
+  {
     "id": 1,
     "title": "yha",
     "infoText": "yha.co.nz",
@@ -26,13 +33,6 @@
     "infoText": "releasenz.com",
     "uri": "https://www.releasenz.com",
     "description": "Release Wanaka provides luxury accommodation and bespoke travel experiences in Wanaka."
-  },
-  {
-    "id": 5,
-    "title": "la cajun bayou",
-    "infoText": "lacajunbayou.com",
-    "uri": "https://www.lacajunbayou.com/where-to-stay",
-    "description": "Promoting Accommodations, Attractions, Events & Food in Louisiana's Cajun Bayou."
   },
   {
     "id": 6,

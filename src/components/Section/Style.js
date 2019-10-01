@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledSectionHeading = styled.h2`
   font-size: 20px;
@@ -15,7 +15,7 @@ export const StyledSectionHeading = styled.h2`
 
   &:after {
     background: #161616;
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -1em;
@@ -24,7 +24,7 @@ export const StyledSectionHeading = styled.h2`
     z-index: -1;
   }
 
-  @media (max-width: 768px)  {
+  @media (max-width: 768px) {
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
     font-size: 1rem;
@@ -52,18 +52,26 @@ export const StyledSection = styled.section`
 `;
 
 export const StyledSectionBlue = styled(StyledSection)`
-  outline: 1px solid #88F6FD;
+  outline: 1px solid #88f6fd;
 
   ${StyledSectionHeading} {
-    color: #88F6FD;
+    color: #88f6fd;
   }
 `;
 
 export const StyledSectionGreen = styled(StyledSection)`
-  outline: 1px solid #83C487;
+  outline: 1px solid #83c487;
 
   ${StyledSectionHeading} {
-    color: #83C487;
+    color: #83c487;
+  }
+`;
+
+export const StyledSectionOrange = styled(StyledSection)`
+  outline: 1px solid #d77a05;
+
+  ${StyledSectionHeading} {
+    color: #d77a05;
   }
 `;
 
@@ -82,12 +90,28 @@ export const StyledSectionList = styled.div`
 `;
 
 export const StyledSectionListItem = styled.div`
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  -webkit-box-flex: 0;
-  flex: 0 1 30%;
   margin: 0;
   padding: 0 0 3em;
+  ${props => {
+    return (
+      !props.fill &&
+      css`
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        -webkit-box-flex: 0;
+        flex: 0 1 30%;
+      `
+    );
+  }}
+
+  ${props => {
+    return (
+      props.fill &&
+      css`
+        font-size: 1.2rem;
+      `
+    );
+  }}
 `;
 
 export const StyledSectionListItemTitle = styled.h3`
@@ -97,20 +121,20 @@ export const StyledSectionListItemTitle = styled.h3`
   font-size: 0.9em;
   font-weight: 400;
 
-  a, span {
-    margin-right: .25em;
+  a,
+  span {
+    margin-right: 0.25em;
     border-bottom: 1px dotted currentColor;
 
     ${StyledSectionBlue} & {
-      color: #88F6FD;
+      color: #88f6fd;
     }
 
     ${StyledSectionGreen} & {
-      color: #83C487;
+      color: #83c487;
     }
   }
 `;
-
 
 export const StyledSectionListItemDetail = styled.div`
   color: #ccc;
