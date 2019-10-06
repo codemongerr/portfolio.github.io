@@ -1,7 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%
@@ -182,7 +181,6 @@ template {
   display: none
 }
 
-
 html {
   box-sizing: border-box;
 }
@@ -262,21 +260,26 @@ a:focus {
   outline: none;
 }
 
-
-
 pre {
   margin-top: 0;
-  white-space: pre-line;
 }
 
 code {
   color: #737373;
   background: 0;
   padding: 0;
+  pre {
+    font-family: 'Overpass Mono', Monaco,Consolas,monospace;
+  }
 }
 
-code em {
-  color: #fff;
+.__json-key__{
+color: #ccc;
+}
+
+code em, 
+.__json-string__{
+  color: #83c487;
   font-style: normal;
 }
 

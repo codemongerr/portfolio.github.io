@@ -1,6 +1,7 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
+import React from "react";
+import styled, { css } from "styled-components";
 
+// Simple styled button component
 const Button = styled.button`
   display: inline-block;
   font-size: 16px;
@@ -21,33 +22,33 @@ const Button = styled.button`
   transition: all 250ms ease-in-out;
   ${props => {
     return (
-      props.variant === 'ghost' &&
+      props.variant === "ghost" &&
       css`
         border: 1px solid;
         border-color: inherit;
         color: inherit;
-      
+
         &:hover {
           background-color: ${props => props.theme.color.white};
           border: 1px solid ${props => props.theme.color.white};
           color: ${props => props.theme.color.black};
         }
       `
-    )
+    );
   }}
   ${props => {
     return (
-      props.variant === 'ghost-green' &&
+      props.variant === "ghost-green" &&
       css`
         border: 1px solid ${props => props.theme.color.green};
         color: ${props => props.theme.color.green};
-      
+
         &:hover {
           background-color: ${props => props.theme.color.green};
           color: ${props => props.theme.color.white};
         }
       `
-    )
+    );
   }}
-`
+`;
 export default Button;

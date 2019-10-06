@@ -26,31 +26,28 @@ function App(props) {
         <GlobalStyle />
         <Banner />
         <SectionGreen id="about">
-          <SectionHeading>About Me And My Current Work</SectionHeading>
+          <SectionHeading>About Me</SectionHeading>
           <SectionList>
-            <SectionListItem fill={true}>
+            <SectionListItem fluid={true}>
               <SectionListItemDetail>
                 <p>
-                  Kia ora! I’m Talwinder Singh a Full Stack developer based in
+                  Kia ora! I’m Talwinder Singh a web developer based in
                   Auckland.
                 </p>
                 <p>
-                  From writing plain HTML pages for my college assignment to
-                  building modern UI and web applications using new methods and
-                  technology, I've build and contributed to many projects and
-                  made difference to users and their businesses. The development
-                  and delivery section is really important to me, because I
-                  thereby constantly improve my skills and stay up-to-date with
-                  new methods and technology to provide best solutions to users.
+                  From writing plain HTML pages for my college assignments to
+                  building modern UI and web applications, I've built and
+                  contributed to many projects and made difference to users and
+                  their businesses. The development and delivery section is
+                  really important to me, because I thereby constantly improve
+                  my skills and stay up-to-date with new methods and technology
+                  to provide best solutions to users.
                 </p>
                 <p>
-                  As a Full Stack developer, currently I'm contributing to a
-                  reservation system (
-                  <a href="https://www.resbook.com" target="_blank">
-                    ResBook
-                  </a>
-                  ) which provides reservation management solution to users
-                  across the globe.
+                  Currently I'm contributing to a reservation system which
+                  provides reservation management solution to users across the
+                  globe. As a Full Stack developer, I'm responsible for creating
+                  API's and UI using React, CSS and HTML.
                 </p>
               </SectionListItemDetail>
             </SectionListItem>
@@ -78,7 +75,7 @@ function App(props) {
           <SectionHeading>Area of expertise</SectionHeading>
           <SectionList>
             {skills.map(skill => (
-              <SectionListItem>
+              <SectionListItem key={`skill-${skill.id}`}>
                 <SectionListItemTitle>
                   <span>{skill.title}</span>
                 </SectionListItemTitle>

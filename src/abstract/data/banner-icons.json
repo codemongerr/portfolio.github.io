@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "LinkedIn",
+    "icon": ["fab", "linkedin"],
+    "uri": "https://www.linkedin.com/in/codemonger"
+  },
+  {
+    "id": 2,
+    "title": "GitHub",
+    "icon": ["fab", "github"],
+    "uri": "https://github.com/codemongerr"
+  },
+  {
+    "id": 3,
+    "title": "Twitter",
+    "icon": ["fab", "twitter"],
+    "uri": "https://twitter.com/codemongerr"
+  },
+  {
+    "id": 4,
+    "title": "Contact me",
+    "icon": "envelope",
+    "uri": "mailto:retro.nz90@gmail.com"
+  },
+  {
+    "id": 5,
+    "title": "Stack Overflow",
+    "icon": ["fab", "stack-overflow"],
+    "uri": "https://stackoverflow.com/users/10160316/codemonger"
+  }
+]

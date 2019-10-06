@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "front-end",
     "list": [
       "HTML5",
@@ -16,6 +17,7 @@
     ]
   },
   {
+    "id": 2,
     "title": "back-end",
     "list": [
       "API development and integration",
@@ -28,6 +30,7 @@
     ]
   },
   {
+    "id": 3,
     "title": "tools",
     "list": [
       "Ansible",

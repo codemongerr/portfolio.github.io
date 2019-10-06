@@ -7,6 +7,13 @@
     "description": "New Zealand owned and operated cloud based reservation management system designed specifically for accommodation providers and Property Managers worldwide."
   },
   {
+    "id": 6,
+    "title": "portfolio",
+    "infoText": "talwindersingh.online",
+    "uri": "https://github.com/codemongerr/portfolio.github.io",
+    "description": "Source code of my personal website built in ReactJs ⚛️and styled-components 💅"
+  },
+  {
     "id": 1,
     "title": "yha",
     "infoText": "yha.co.nz",
@@ -33,12 +40,5 @@
     "infoText": "releasenz.com",
     "uri": "https://www.releasenz.com",
     "description": "Release Wanaka provides luxury accommodation and bespoke travel experiences in Wanaka."
-  },
-  {
-    "id": 6,
-    "title": "paradise",
-    "infoText": "paradisemotorcycletours.co.nz",
-    "uri": "https://www.paradisemotorcycletours.co.nz",
-    "description": "Paradise Motorcycle Tours is New Zealand's one of the biggest tour operator providing Guided/Self-guided motorcycle tours."
   }
 ]

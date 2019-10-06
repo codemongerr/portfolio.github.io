@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import BannerImage from "../../images/banner.jpg";
 
+// Creates the main banner wrapper
 export const BannerContainer = styled.div`
   position: relative;
   width: 100%;
@@ -10,6 +11,7 @@ export const BannerContainer = styled.div`
   color: ${props => props.theme.color.white};
 `;
 
+// Creates the banner content section
 export const BannerContent = styled.div`
   align-items: flex-start;
   display: flex;
@@ -34,6 +36,7 @@ export const BannerContent = styled.div`
   }
 `;
 
+// Creates the banner transparent overlay
 export const BannerOverlay = styled.div`
   position: absolute;
   left: 0;
@@ -87,11 +90,13 @@ export const BannerOverlay = styled.div`
   }
 `;
 
+// Creates the container to wrap banner icons
 export const BannerIconList = styled.div`
   margin-top: auto;
   margin-bottom: 1rem;
 `;
 
+// Creates the styled wrapper to contain icon
 export const BannerIcon = styled.a`
   font-size: 1.7em;
   margin-right: 2rem;

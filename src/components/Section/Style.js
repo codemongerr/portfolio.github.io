@@ -94,7 +94,7 @@ export const StyledSectionListItem = styled.div`
   padding: 0 0 3em;
   ${props => {
     return (
-      !props.fill &&
+      !props.fluid &&
       css`
         -ms-flex-item-align: start;
         align-self: flex-start;
@@ -106,7 +106,7 @@ export const StyledSectionListItem = styled.div`
 
   ${props => {
     return (
-      props.fill &&
+      props.fluid &&
       css`
         font-size: 1.2rem;
       `
@@ -132,6 +132,10 @@ export const StyledSectionListItemTitle = styled.h3`
 
     ${StyledSectionGreen} & {
       color: #83c487;
+    }
+
+    ${StyledSectionOrange} & {
+      color: #d77a05;
     }
   }
 `;

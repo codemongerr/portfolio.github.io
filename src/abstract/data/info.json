@@ -1,0 +1,15 @@
+{
+  "name": "Talwinder Singh",
+  "occupation": "Web Developer",
+  "location": "Auckland, New Zealand",
+  "worksFor": "Tomahawk",
+  "alumniOf": "Yoobee",
+  "interests": [
+    "reactjs",
+    "agile",
+    "api",
+    "code quality",
+    "semantic web",
+    "user experience"
+  ]
+}
