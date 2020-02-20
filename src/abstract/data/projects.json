@@ -14,6 +14,13 @@
     "description": "Source code of my personal website built in ReactJs ⚛️and styled-components 💅"
   },
   {
+    "id": 4,
+    "title": "bookmarky",
+    "infoText": "bookmarky.io",
+    "uri": "https://github.com/codemongerr/bookmarky.github.io/",
+    "description": "Source code of a simple vanilla JS app to manage bookmarks. Working app link on GitHub repo 😃"
+  },
+  {
     "id": 1,
     "title": "yha",
     "infoText": "yha.co.nz",
@@ -33,12 +40,5 @@
     "infoText": "ymcaaccommodation.org.nz",
     "uri": "https://www.ymcaaccommodation.org.nz",
     "description": "YMCA Auckland is a not-for-profit hostel which is helping kiwi families and teens by contributing to valued programmes like Family Camp, Raise Up and Fee Assistance for after-school care."
-  },
-  {
-    "id": 4,
-    "title": "release wanaka",
-    "infoText": "releasenz.com",
-    "uri": "https://www.releasenz.com",
-    "description": "Release Wanaka provides luxury accommodation and bespoke travel experiences in Wanaka."
   }
 ]

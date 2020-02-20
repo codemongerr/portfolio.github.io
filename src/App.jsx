@@ -31,23 +31,23 @@ function App(props) {
             <SectionListItem fluid={true}>
               <SectionListItemDetail>
                 <p>
-                  Kia ora! I’m Talwinder Singh a web developer based in
+                  Kia ora! I'm Talwinder Singh a web developer based in
                   Auckland.
                 </p>
                 <p>
                   From writing plain HTML pages for my college assignments to
                   building modern UI and web applications, I've built and
                   contributed to many projects and made difference to users and
-                  their businesses. The development and delivery section is
-                  really important to me, because I thereby constantly improve
-                  my skills and stay up-to-date with new methods and technology
-                  to provide best solutions to users.
+                  their businesses. The development and delivery phase is really
+                  important to me, because I thereby constantly improve my
+                  skills and stay up-to-date with new methods and technology to
+                  provide best solutions to users.
                 </p>
                 <p>
-                  Currently I'm contributing to a reservation system which
-                  provides reservation management solution to users across the
-                  globe. As a Full Stack developer, I'm responsible for creating
-                  API's and UI using React, CSS and HTML.
+                  Currently I'm contributing to a booking system which provides
+                  reservation management solution to users across the globe. As
+                  a Full Stack developer, I'm responsible for creating API's and
+                  UI using React, CSS and HTML.
                 </p>
               </SectionListItemDetail>
             </SectionListItem>
