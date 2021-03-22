@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 html {
@@ -286,6 +286,21 @@ code em,
 a {
   background: transparent;
   color: ${props => props.theme.color.green};
+}
+
+@keyframes MoveUpInitial {
+	to {
+		transform: translate3d(0,-105%,0);
+	}
+}
+
+@keyframes MoveUpEnd {
+	from {
+		transform: translate3d(0,100%,0);
+	}
+	to {
+		transform: translate3d(0,0,0);
+	}
 }
 
 `;

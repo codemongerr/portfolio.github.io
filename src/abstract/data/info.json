@@ -1,9 +1,9 @@
 {
-  "name": "Talwinder Singh",
+  "full_name": "Talwinder Singh",
   "occupation": "Full Stack Developer",
   "location": "Auckland, New Zealand",
-  "worksFor": "Tomahawk",
-  "alumniOf": "Yoobee",
+  "works_for": "Tenancy.co.nz",
+  "alumni_of": "Yoobee",
   "interests": [
     "reactjs",
     "agile",

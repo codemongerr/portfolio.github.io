@@ -1,17 +1,16 @@
-import React from "react";
-import JSONPretty from "react-json-pretty";
-import { uid } from "react-uid";
-import Icon from "../Icon";
-// import PrettyJson from "../PrettyJson";
+import React from 'react';
+import {uid} from 'react-uid';
+import JSONPretty from 'react-json-pretty';
+import Icon from '../Icon';
 import {
   BannerContainer,
   BannerContent,
   BannerOverlay,
   BannerIconList,
-  BannerIcon
-} from "./Style";
-import bannerIcons from "../../abstract/data/banner-icons.json";
-import info from "../../abstract/data/info.json";
+  BannerIcon,
+} from './Style';
+import bannerIcons from '../../abstract/data/banner-icons.json';
+import info from '../../abstract/data/info.json';
 
 /**
  * Stateless function component which creates website banner
@@ -31,9 +30,9 @@ function Banner() {
             <BannerIcon
               href={bannerIcon.uri}
               target="_blank"
+              rel="noreferrer"
               title={bannerIcon.title}
-              key={uid(bannerIcon)}
-            >
+              key={uid(bannerIcon)}>
               <Icon name={bannerIcon.icon} />
             </BannerIcon>
           ))}

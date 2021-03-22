@@ -1,17 +1,29 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
-  StyledSectionBlue,
-  StyledSectionGreen,
-  StyledSectionOrange,
-  StyledSectionHeading
-} from "./Style";
-import { handleWrapping } from "../Helper";
+  StyledSection,
+  StyledSectionContent,
+  StyledSectionHeading,
+} from './Styles';
 
-export const SectionBlue = props => handleWrapping(StyledSectionBlue, props);
+function Section({children, color, heading, ...rest}) {
+  return (
+    <StyledSection color={color} {...rest}>
+      <StyledSectionHeading>{heading}</StyledSectionHeading>
+      <StyledSectionContent>{children}</StyledSectionContent>
+    </StyledSection>
+  );
+}
 
-export const SectionGreen = props => handleWrapping(StyledSectionGreen, props);
+Section.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.oneOf(['blue', 'green', 'orange']).isRequired,
+  heading: PropTypes.string.isRequired,
+  id: PropTypes.string,
+};
 
-export const SectionOrange = props =>
-  handleWrapping(StyledSectionOrange, props);
+Section.defaultProps = {
+  id: '',
+};
 
-export const SectionHeading = props =>
-  handleWrapping(StyledSectionHeading, props);
+export default Section;

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import BannerImage from "../../images/banner.jpg";
+import styled from 'styled-components';
+import BannerImage from '../../images/banner.jpg';
 
 // Creates the main banner wrapper
 export const BannerContainer = styled.div`
@@ -27,7 +27,7 @@ export const BannerContent = styled.div`
   code {
     font-size: 1.1em;
     line-height: 1.6;
-    font-family: "Overpass Mono", Monaco, Consolas, monospace;
+    font-family: 'Overpass Mono', Monaco, Consolas, monospace;
   }
 
   @media (max-width: 750px) {
@@ -61,7 +61,7 @@ export const BannerOverlay = styled.div`
       rgba(0, 0, 0, 0.8) 60%,
       transparent 100%
     );
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -94,16 +94,20 @@ export const BannerOverlay = styled.div`
 export const BannerIconList = styled.div`
   margin-top: auto;
   margin-bottom: 1rem;
+  overflow: hidden;
 `;
 
 // Creates the styled wrapper to contain icon
 export const BannerIcon = styled.a`
   font-size: 1.7em;
   margin-right: 2rem;
-  transition: color 300ms ease;
+  transition: transform 0.3s, color 0.3s;
+  display: inline-block;
+  position: relative;
   color: ${props => props.theme.color.white};
 
   &:hover {
     color: ${props => props.theme.color.green};
+    transform: scale(1.2);
   }
 `;

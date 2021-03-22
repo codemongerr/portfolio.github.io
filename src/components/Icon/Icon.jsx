@@ -1,9 +1,10 @@
-import React from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { StyledIcon } from "./Style";
+import React from 'react';
+import PropTypes from 'prop-types';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fas} from '@fortawesome/free-solid-svg-icons';
+import {fab} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {StyledIcon} from './Style';
 
 library.add(fas, fab);
 
@@ -17,7 +18,7 @@ library.add(fas, fab);
  * @return Styled icon component with font awesome icon
  */
 function Icon(props) {
-  const { name } = props;
+  const {name} = props;
   return (
     name && (
       <StyledIcon>
@@ -26,5 +27,9 @@ function Icon(props) {
     )
   );
 }
+
+Icon.propTypes = {
+  name: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+};
 
 export default Icon;
