@@ -3,15 +3,16 @@
     "id": 1,
     "title": "front-end",
     "list": [
-      "HTML5",
-      "CSS",
-      "ReactJS",
-      "Vue.js",
+      "React",
+      "Storybook",
       "JavaScript",
       "TypeScript",
+      "Vue.js",
       "BEM",
       "SASS",
-      "Twitter bootstrap",
+      "HTML5",
+      "CSS",
+      "CSS frameworks",
       "Responsive web design",
       "Atomic design",
       "jQuery"
@@ -24,20 +25,22 @@
       "API development and integration",
       "PHP",
       "MySQL",
-      "MongoDB",
-      "SilverStripe",
       "Laravel",
-      "Doctrine"
+      "MongoDB",
+      "Doctrine",
+      "SilverStripe"
     ]
   },
   {
     "id": 3,
-    "title": "tools",
+    "title": "tools/platforms",
     "list": [
+      "Auto deployment",
       "Ansible",
       "VS Code",
       "Jira",
       "Slack",
+      "GitLab",
       "GIT",
       "GitHub",
       "Terminal",

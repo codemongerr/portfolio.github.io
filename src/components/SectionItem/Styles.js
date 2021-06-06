@@ -18,7 +18,7 @@ export const StyledSectionItemTitle = styled.h3`
 export const StyledSectionItem = styled.div`
   ${({color, fluid}) => css`
     margin: 0;
-    padding: 0 0 3em;
+    padding: 0 0 2em;
 
     @media screen and (min-width: 768px) {
       ${!fluid &&

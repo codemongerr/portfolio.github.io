@@ -15,7 +15,9 @@ function Skills({data}) {
     </Section>
   );
 }
+
 Skills.propTypes = {
   data: PropTypes.array.isRequired,
 };
+
 export default Skills;

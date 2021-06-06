@@ -6,7 +6,7 @@ import SectionItem from '../SectionItem';
 
 function Work({data}) {
   return (
-    <Section color="blue" heading="My Work" id="work">
+    <Section color="blue" heading="My work" id="work">
       {data.map(project => (
         <SectionItem
           color="blue"
@@ -20,7 +20,9 @@ function Work({data}) {
     </Section>
   );
 }
+
 Work.propTypes = {
   data: PropTypes.array.isRequired,
 };
+
 export default Work;

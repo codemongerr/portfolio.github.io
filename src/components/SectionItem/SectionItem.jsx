@@ -9,15 +9,17 @@ import {
 function SectionItem({children, color, infoText, title, url, ...rest}) {
   return (
     <StyledSectionItem color={color} {...rest}>
-      <StyledSectionItemTitle>
-        {title && url && (
-          <a href={url} target="_blank" rel="noreferrer">
-            {title}
-          </a>
-        )}
-        {title && !url && <span>{title}</span>}
-        {infoText && `(${infoText})`}
-      </StyledSectionItemTitle>
+      {title && (
+        <StyledSectionItemTitle>
+          {title && url && (
+            <a href={url} target="_blank" rel="noreferrer">
+              {title}
+            </a>
+          )}
+          {title && !url && <span>{title}</span>}
+          {infoText && `(${infoText})`}
+        </StyledSectionItemTitle>
+      )}
       {children && (
         <StyledSectionItemDetails>{children}</StyledSectionItemDetails>
       )}
@@ -27,7 +29,7 @@ function SectionItem({children, color, infoText, title, url, ...rest}) {
 
 SectionItem.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(['blue', 'green', 'orange']).isRequired,
+  color: PropTypes.oneOf(['blue', 'green', 'orange', 'yellow']).isRequired,
   fluid: PropTypes.bool,
   infoText: PropTypes.string,
   title: PropTypes.string,

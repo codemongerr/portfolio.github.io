@@ -17,7 +17,7 @@ function Section({children, color, heading, ...rest}) {
 
 Section.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(['blue', 'green', 'orange']).isRequired,
+  color: PropTypes.oneOf(['blue', 'green', 'orange', 'yellow']).isRequired,
   heading: PropTypes.string.isRequired,
   id: PropTypes.string,
 };

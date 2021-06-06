@@ -19,7 +19,7 @@ export const BannerContent = styled.div`
   font-size: 19px;
   min-height: 90vh;
   overflow: hidden;
-  padding: 5rem 75px 0 75px;
+  padding: 3.5rem 75px 0 75px;
   position: relative;
   z-index: 3;
   font-family: ${props => props.theme.fontSerifAlt};
@@ -32,7 +32,7 @@ export const BannerContent = styled.div`
 
   @media (max-width: 750px) {
     font-size: 16px;
-    padding: 30vw 5vw 5vw 5vw;
+    padding: 15vw 5vw 5vw 5vw;
   }
 `;
 
@@ -87,27 +87,5 @@ export const BannerOverlay = styled.div`
         transparent 100%
       );
     }
-  }
-`;
-
-// Creates the container to wrap banner icons
-export const BannerIconList = styled.div`
-  margin-top: auto;
-  margin-bottom: 1rem;
-  overflow: hidden;
-`;
-
-// Creates the styled wrapper to contain icon
-export const BannerIcon = styled.a`
-  font-size: 1.7em;
-  margin-right: 2rem;
-  transition: transform 0.3s, color 0.3s;
-  display: inline-block;
-  position: relative;
-  color: ${props => props.theme.color.white};
-
-  &:hover {
-    color: ${props => props.theme.color.green};
-    transform: scale(1.2);
   }
 `;

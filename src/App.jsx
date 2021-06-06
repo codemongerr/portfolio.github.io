@@ -5,6 +5,7 @@ import GlobalStyle from './abstract/Styles/GlobalStyle';
 import dark from './abstract/theme';
 import About from './components/About';
 import Banner from './components/Banner';
+import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import projects from './abstract/data/projects.json';
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Work data={projects} />
       <Skills data={skills} />
+      <Contact />
     </ThemeProvider>
   );
 }

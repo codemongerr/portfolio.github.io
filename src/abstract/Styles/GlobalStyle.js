@@ -191,7 +191,7 @@ html, body {
 }
 
 body {
-  background-color: #161616;
+  background-color: #0e0e0e;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -306,3 +306,4 @@ a {
 `;
 
 export default GlobalStyle;
+// background-color: #161616;

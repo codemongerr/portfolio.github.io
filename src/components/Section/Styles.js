@@ -15,7 +15,7 @@ export const StyledSectionHeading = styled.h2`
   z-index: 1;
 
   &:after {
-    background: #161616;
+    background: #0e0e0e;
     content: '';
     position: absolute;
     top: 0;
@@ -40,7 +40,7 @@ export const StyledSection = styled.section`
     position: relative;
     outline: 1px solid;
     outline-offset: -38px;
-    padding: 90px 75px 60px 75px;
+    padding: 80px 75px 40px 75px;
     outline: 1px solid ${colorMap(color)};
 
     @media screen and (max-width: 767px) {

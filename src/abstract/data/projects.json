@@ -1,5 +1,19 @@
 [
   {
+    "id": 3,
+    "title": "ui components",
+    "infoText": "design.tpsportal.co.nz",
+    "uri": "https://design.tpsportal.co.nz",
+    "description": "A library of UI components built with love, React, and Storybook."
+  },
+  {
+    "id": 6,
+    "title": "portfolio",
+    "infoText": "talwindersingh.online",
+    "uri": "https://github.com/codemongerr/portfolio.github.io",
+    "description": "Source code of my personal website built with React and styled-components."
+  },
+  {
     "id": 5,
     "title": "resbook",
     "infoText": "resbook.com",
@@ -7,18 +21,11 @@
     "description": "New Zealand owned and operated cloud based reservation management system designed specifically for accommodation providers and Property Managers worldwide."
   },
   {
-    "id": 6,
-    "title": "portfolio",
-    "infoText": "talwindersingh.online",
-    "uri": "https://github.com/codemongerr/portfolio.github.io",
-    "description": "Source code of my personal website built in ReactJs ⚛️and styled-components 💅"
-  },
-  {
     "id": 4,
     "title": "bookmarky",
     "infoText": "bookmarky.io",
-    "uri": "https://github.com/codemongerr/bookmarky.github.io/",
-    "description": "Source code of a simple vanilla JS app to manage bookmarks. Working app link on GitHub repo 😃"
+    "uri": "https://github.com/codemongerr/bookmarky.github.io",
+    "description": "Source code of a simple vanilla JS app to manage bookmarks. Working link on GitHub repo."
   },
   {
     "id": 1,
@@ -33,12 +40,5 @@
     "infoText": "sculptureum.nz",
     "uri": "https://www.sculptureum.nz",
     "description": "Sculptureum is one of the New Zealand's elegant Gardens, Galleries and Rothko Restaurant which is built on 25-acre property at Matakana in April 2017."
-  },
-  {
-    "id": 3,
-    "title": "ymca",
-    "infoText": "ymcaaccommodation.org.nz",
-    "uri": "https://www.ymcaaccommodation.org.nz",
-    "description": "YMCA Auckland is a not-for-profit hostel which is helping kiwi families and teens by contributing to valued programmes like Family Camp, Raise Up and Fee Assistance for after-school care."
   }
 ]

@@ -1,15 +1,7 @@
 import React from 'react';
-import {uid} from 'react-uid';
 import JSONPretty from 'react-json-pretty';
-import Icon from '../Icon';
-import {
-  BannerContainer,
-  BannerContent,
-  BannerOverlay,
-  BannerIconList,
-  BannerIcon,
-} from './Style';
-import bannerIcons from '../../abstract/data/banner-icons.json';
+import {BannerContainer, BannerContent, BannerOverlay} from './Style';
+import SocialIcons from '../SocialIcons';
 import info from '../../abstract/data/info.json';
 
 /**
@@ -23,20 +15,9 @@ function Banner() {
       <BannerOverlay />
       <BannerContent>
         <code>
-          <JSONPretty id="personal-info" data={info} space={4} />
+          <JSONPretty id="personal-info" data={info} space={2} />
         </code>
-        <BannerIconList>
-          {bannerIcons.map(bannerIcon => (
-            <BannerIcon
-              href={bannerIcon.uri}
-              target="_blank"
-              rel="noreferrer"
-              title={bannerIcon.title}
-              key={uid(bannerIcon)}>
-              <Icon name={bannerIcon.icon} />
-            </BannerIcon>
-          ))}
-        </BannerIconList>
+        <SocialIcons gutterBottom />
       </BannerContent>
     </BannerContainer>
   );

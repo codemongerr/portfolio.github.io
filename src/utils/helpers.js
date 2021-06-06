@@ -3,6 +3,7 @@ export const colorMap = name => {
     blue: '#88f6fd',
     green: '#83c487',
     orange: '#d77a05',
+    yellow: '#c0a062',
   };
   return colors[name];
 };

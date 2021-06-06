@@ -1,13 +1,15 @@
 {
   "full_name": "Talwinder Singh",
-  "occupation": "Full Stack Developer",
+  "occupation": "Full Stack Engineer",
   "location": "Auckland, New Zealand",
   "works_for": "Tenancy.co.nz",
   "alumni_of": "Yoobee",
-  "interests": [
-    "reactjs",
+  "skills": [
+    "react",
+    "aws",
     "agile",
     "api",
+    "cd/ci",
     "code quality",
     "semantic web",
     "user experience"
