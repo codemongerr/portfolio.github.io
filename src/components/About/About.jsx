@@ -7,8 +7,8 @@ function About(props) {
     <Section color="green" heading="About me" id="about">
       <SectionItem fluid color="green">
         <p>
-          Kia ora! I&#39;m Talwinder Singh, a Full Stack Engineer based in
-          Auckland. I build and do rad web stuff.
+          Kia ora! I&#39;m Talwinder Singh, Full Stack Engineer based in
+          Auckland and I build rad web stuff.
         </p>
         <p>
           From writing plain HTML pages for my college assignments to building
@@ -24,9 +24,9 @@ function About(props) {
             tenancy.co.nz
           </a>
           . As a Full Stack Engineer I am responsible for creating and
-          maintaining a UI components library, and UIs using React, APIs, and
-          automated deployments for various property management applications. I
-          am also working on contract based projects.
+          maintaining React UI components library and UIs, APIs, and automated
+          deployments for various property management applications. I am also
+          working on contract based projects.
         </p>
       </SectionItem>
     </Section>

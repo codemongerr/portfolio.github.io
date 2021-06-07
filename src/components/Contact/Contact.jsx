@@ -10,8 +10,8 @@ function Contact(props) {
         <p style={{marginTop: 0, marginBottom: 20, lineHeight: 1.6}}>
           Have an awesome idea for a website or app? Like to see it on web?
           <br />
-          Lets get in touch and convert your awesome idea into beautiful website
-          or app for the world out there.
+          Lets get in touch and convert your rad idea into beautiful product for
+          the world out there.
         </p>
         <SocialIcons />
       </SectionItem>
