@@ -1,17 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import JSONPretty from 'react-json-pretty';
-import {BannerContainer, BannerContent, BannerOverlay} from './Style';
-import SocialIcons from '../SocialIcons';
-import info from '../../abstract/data/info.json';
+import {BannerContainer, BannerContent, BannerOverlay} from './Banner.styled';
+import SocialIcons from './SocialIcons';
 
-/**
- * Stateless function component which creates website banner
- *
- * @return Banner component
- */
-function Banner() {
+function Banner({info, src}) {
   return (
-    <BannerContainer>
+    <BannerContainer src={src}>
       <BannerOverlay />
       <BannerContent>
         <code>
@@ -22,5 +17,10 @@ function Banner() {
     </BannerContainer>
   );
 }
+
+Banner.propTypes = {
+  info: PropTypes.object.isRequired,
+  src: PropTypes.string.isRequired,
+};
 
 export default Banner;

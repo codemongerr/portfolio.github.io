@@ -4,7 +4,7 @@ import {
   StyledSection,
   StyledSectionContent,
   StyledSectionHeading,
-} from './Styles';
+} from './Section.styled';
 
 function Section({children, color, heading, ...rest}) {
   return (
@@ -17,7 +17,8 @@ function Section({children, color, heading, ...rest}) {
 
 Section.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(['blue', 'green', 'orange', 'yellow']).isRequired,
+  color: PropTypes.oneOf(['blue', 'green', 'orange', 'yellow', 'lightblue'])
+    .isRequired,
   heading: PropTypes.string.isRequired,
   id: PropTypes.string,
 };

@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {colorMap} from '../../utils/helpers';
+import {colorMap} from '../utils/helpers';
 
 export const StyledSectionHeading = styled.h2`
   font-size: 20px;

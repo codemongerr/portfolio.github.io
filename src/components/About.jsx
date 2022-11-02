@@ -1,8 +1,8 @@
 import React from 'react';
-import Section from '../Section';
-import SectionItem from '../SectionItem';
+import Section from './Section';
+import SectionItem from './SectionItem';
 
-function About(props) {
+function About() {
   return (
     <Section color="green" heading="About me" id="about">
       <SectionItem fluid color="green">
@@ -19,14 +19,10 @@ function About(props) {
           with new methods and technology to provide best solutions to users.
         </p>
         <p>
-          Currently I am working for{' '}
-          <a href="http://www.tenancy.co.nz" target="_blank" rel="noreferrer">
-            tenancy.co.nz
-          </a>
-          . As a Full Stack Engineer I am responsible for creating and
-          maintaining React UI components library and UIs, APIs, and automated
-          deployments for various property management applications. I am also
-          working on contract based projects.
+          Currently I am working for tenancy.co.nz. As a Full Stack Engineer I
+          am responsible for creating and maintaining React UI components
+          library and UIs, APIs, and automated deployments for various property
+          management applications. I am also working on contract based projects.
         </p>
       </SectionItem>
     </Section>

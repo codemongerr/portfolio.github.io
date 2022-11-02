@@ -1,5 +1,12 @@
 [
   {
+    "id": 2,
+    "title": "tenant portal",
+    "infoText": "tenant.tpsportal.co.nz",
+    "uri": "https://tenant.tpsportal.co.nz/",
+    "description": "React app for tenants to allow them to create a tenant profile to apply for properties."
+  },
+  {
     "id": 3,
     "title": "ui components",
     "infoText": "design.tpsportal.co.nz",
@@ -12,13 +19,6 @@
     "infoText": "talwindersingh.online",
     "uri": "https://github.com/codemongerr/portfolio.github.io",
     "description": "Source code of personal website built with React and styled-components."
-  },
-  {
-    "id": 5,
-    "title": "resbook",
-    "infoText": "resbook.com",
-    "uri": "https://www.resbook.com",
-    "description": "New Zealand owned and operated cloud based reservation management system designed specifically for accommodation providers and Property Managers worldwide."
   },
   {
     "id": 4,
@@ -35,10 +35,10 @@
     "description": "YHA is New Zealand's largest chain of backpackers hostels providing accommodation in 38 location. \nAs a Front-end architect I was responsible for converting designs/concepts into responsive/adaptive web pages & interfaces."
   },
   {
-    "id": 2,
-    "title": "sculptureum",
-    "infoText": "sculptureum.nz",
-    "uri": "https://www.sculptureum.nz",
-    "description": "Sculptureum is one of the New Zealand's elegant Gardens, Galleries and Rothko Restaurant which is built on 25-acre property at Matakana in April 2017."
+    "id": 5,
+    "title": "resbook",
+    "infoText": "resbook.com",
+    "uri": "https://www.resbook.com",
+    "description": "New Zealand owned and operated cloud based reservation management system designed specifically for accommodation providers and Property Managers worldwide."
   }
 ]

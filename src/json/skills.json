@@ -6,13 +6,10 @@
       "React",
       "Storybook",
       "JavaScript",
-      "TypeScript",
-      "Vue.js",
       "BEM",
       "SASS",
       "HTML5",
       "CSS",
-      "CSS frameworks",
       "Responsive web design",
       "Atomic design",
       "jQuery"
@@ -26,17 +23,15 @@
       "PHP",
       "MySQL",
       "Laravel",
-      "MongoDB",
       "Doctrine",
-      "Wordpress",
-      "SilverStripe"
+      "Wordpress"
     ]
   },
   {
     "id": 3,
     "title": "tools/platforms",
     "list": [
-      "Auto deployment",
+      "CI/CD",
       "Ansible",
       "VS Code",
       "Jira",
@@ -46,7 +41,7 @@
       "GitHub",
       "Terminal",
       "Webpack",
-      "Adobe XD, Photoshop, Illustrator"
+      "Adobe XD, Photoshop, Figma"
     ]
   }
 ]

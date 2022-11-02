@@ -1,8 +1,8 @@
 import React from 'react';
 import {uid} from 'react-uid';
 import PropTypes from 'prop-types';
-import Section from '../Section';
-import SectionItem from '../SectionItem';
+import Section from './Section';
+import SectionItem from './SectionItem';
 
 function Skills({data}) {
   return (

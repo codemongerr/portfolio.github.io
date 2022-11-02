@@ -1,14 +1,15 @@
-import styled from 'styled-components';
-import BannerImage from '../../images/banner.jpg';
+import styled, {css} from 'styled-components';
 
 // Creates the main banner wrapper
 export const BannerContainer = styled.div`
-  position: relative;
-  width: 100%;
-  background: url(${BannerImage}) no-repeat center;
-  background-size: cover;
-  height: 100vh;
-  color: ${props => props.theme.color.white};
+  ${({src, theme}) => css`
+    position: relative;
+    width: 100%;
+    background: url(${src}) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: ${theme.color.white};
+  `}
 `;
 
 // Creates the banner content section

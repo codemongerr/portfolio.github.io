@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {uid} from 'react-uid';
-import Icon from '../Icon';
-import {SocialIconList, SocialIcon} from './Style';
-import icons from '../../abstract/data/social-icons.json';
+import Icon from './Icon';
+import {SocialIconList, SocialIcon} from './SocialIcons.styled';
+import icons from '../json/social-icons.json';
 
 function SocialIcons({gutterBottom}) {
   return (

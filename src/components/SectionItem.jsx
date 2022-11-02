@@ -4,7 +4,7 @@ import {
   StyledSectionItem,
   StyledSectionItemTitle,
   StyledSectionItemDetails,
-} from './Styles';
+} from './SectionItem.styled';
 
 function SectionItem({children, color, infoText, title, url, ...rest}) {
   return (
@@ -29,7 +29,8 @@ function SectionItem({children, color, infoText, title, url, ...rest}) {
 
 SectionItem.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(['blue', 'green', 'orange', 'yellow']).isRequired,
+  color: PropTypes.oneOf(['blue', 'green', 'orange', 'yellow', 'lightblue'])
+    .isRequired,
   fluid: PropTypes.bool,
   infoText: PropTypes.string,
   title: PropTypes.string,
