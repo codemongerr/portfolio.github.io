@@ -1,12 +1,5 @@
 module.exports = {
-  extends: [
-    'airbnb',
-    'react-app',
-    'prettier',
-    'prettier/flowtype',
-    'prettier/react',
-    'plugin:import/recommended',
-  ],
+  extends: ['airbnb', 'react-app', 'prettier', 'plugin:import/recommended'],
   rules: {
     'no-restricted-imports': ['error'],
     'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
