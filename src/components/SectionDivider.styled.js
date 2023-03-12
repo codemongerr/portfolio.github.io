@@ -19,7 +19,7 @@ const SectionDivider = styled.div`
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    left: 27px;
+    left: 28px;
     top: -15px;
     bottom: -45px;
     width: 3px;

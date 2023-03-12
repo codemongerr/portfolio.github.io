@@ -8,7 +8,7 @@ const h1 = css`
 `;
 
 const h2 = css`
-  font-size: 26px;
+  font-size: 24px;
   @media screen and (min-width: 768px) {
     font-size: 32px;
   }

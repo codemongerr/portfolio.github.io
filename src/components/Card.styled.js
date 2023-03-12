@@ -8,16 +8,12 @@ const StyledCard = styled.div`
   position: relative;
   padding: 15px 20px;
   border: 0px solid #e5e7eb;
-  background-color: rgba(31, 41, 55, 1);
+  background-color: rgba(31, 41, 55, 0.5);
   border-radius: 8px;
   background-image: linear-gradient(to bottom left, var(--gradient-stops));
   box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-
-  @media screen and (min-width: 768px) {
-    background-color: rgba(31, 41, 55, 0.5);
-  }
 `;
 
 export default StyledCard;
