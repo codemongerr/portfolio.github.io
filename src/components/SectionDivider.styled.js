@@ -15,12 +15,16 @@ const makeLinearGradient = ({colors, locations}) => {
 };
 
 const SectionDivider = styled.div`
-  position: absolute;
-  left: 27px;
-  top: -15px;
-  bottom: -45px;
-  width: 3px;
-  ${makeLinearGradient}
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 27px;
+    top: -15px;
+    bottom: -45px;
+    width: 3px;
+    ${makeLinearGradient}
+  }
 `;
 
 export default SectionDivider;
