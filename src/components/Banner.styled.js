@@ -43,9 +43,13 @@ export const BannerContent = styled.div`
   font-family: ${props => props.theme.fontSerifAlt};
 
   code {
-    font-size: 1.1em;
+    font-size: 0.9em;
     line-height: 1.6;
     font-family: 'Overpass Mono', Monaco, Consolas, monospace;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.1em;
+    }
   }
 
   @media (max-width: 750px) {
