@@ -25,7 +25,7 @@
     "lint:js": "eslint ./src/",
     "prepare": "husky install",
     "predeploy": "react-scripts build && cp CNAME build/CNAME",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "repository": {
     "type": "git",
