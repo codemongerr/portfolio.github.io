@@ -1,34 +1,41 @@
-import React from 'react';
-import {uid} from 'react-uid';
 import PropTypes from 'prop-types';
-import Icon from './Icon';
+import GridList from './GridList';
 import Section from './Section';
-import SectionItem from './SectionItem';
-import {StyledText} from './TestimonialList.styled';
+import SectionDivider from './SectionDivider';
+import Testimonial from './Testimonial';
+import {prepareColorVar} from '../utils/helpers';
 
 function TestimonialList({data}) {
   return (
     <Section
-      color="lightblue"
+      color="secondaryAlt"
       heading="What others have to say"
-      id="testimonials">
-      {data.map(item => (
-        <SectionItem fluid color="blue" key={uid(item)}>
-          <StyledText italic>
-            <StyledText color="lightblue" inline>
-              <Icon name={['fa', 'quote-left']} />
-            </StyledText>{' '}
-            {item.description}{' '}
-            <StyledText color="lightblue" inline>
-              <Icon name={['fa', 'quote-right']} />
-            </StyledText>
-          </StyledText>
-          <StyledText color="lightblue">
-            - {item.name}, {item.position}
-          </StyledText>
-        </SectionItem>
-      ))}
-    </Section>
+      id="testimonials"
+      icon="comments"
+      content={
+        <GridList
+          xs={12}
+          sm={6}
+          data={data}
+          renderItem={({description, name, position}) => (
+            <Testimonial
+              description={description}
+              name={name}
+              position={position}
+            />
+          )}
+        />
+      }
+      divider={
+        <SectionDivider
+          colors={[
+            'var(--bg-main)',
+            prepareColorVar('secondaryAlt'),
+            'var(--bg-main)',
+          ]}
+        />
+      }
+    />
   );
 }
 

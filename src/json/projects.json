@@ -1,44 +1,44 @@
 [
   {
     "id": 2,
-    "title": "tenant portal",
+    "title": "Tenant Portal",
     "infoText": "tenant.tpsportal.co.nz",
-    "uri": "https://tenant.tpsportal.co.nz/",
-    "description": "React app for tenants to allow them to create a tenant profile to apply for properties."
+    "url": "https://tenant.tpsportal.co.nz/",
+    "description": "App for tenants to allow them to create a tenant profile to apply for properties for rent."
   },
   {
     "id": 3,
-    "title": "ui components",
+    "title": "UI Components",
     "infoText": "design.tpsportal.co.nz",
-    "uri": "https://design.tpsportal.co.nz",
+    "url": "https://design.tpsportal.co.nz",
     "description": "A library of UI components built with love, React, and Storybook."
   },
   {
     "id": 6,
-    "title": "portfolio",
+    "title": "Portfolio",
     "infoText": "talwindersingh.online",
-    "uri": "https://github.com/codemongerr/portfolio.github.io",
+    "url": "https://github.com/codemongerr/portfolio.github.io",
     "description": "Source code of personal website built with React and styled-components."
   },
   {
     "id": 4,
-    "title": "bookmarky",
+    "title": "Bookmarky",
     "infoText": "bookmarky.io",
-    "uri": "https://github.com/codemongerr/bookmarky.github.io",
+    "url": "https://github.com/codemongerr/bookmarky.github.io",
     "description": "Source code of a simple vanilla JS app to manage bookmarks. Working link on GitHub repo."
   },
   {
     "id": 1,
-    "title": "yha",
+    "title": "YHA",
     "infoText": "yha.co.nz",
-    "uri": "https://www.yha.co.nz",
-    "description": "YHA is New Zealand's largest chain of backpackers hostels providing accommodation in 38 location. \nAs a Front-end architect I was responsible for converting designs/concepts into responsive/adaptive web pages & interfaces."
+    "url": "https://www.yha.co.nz",
+    "description": "As a Front-end architect I was responsible for converting designs/concepts into responsive/adaptive web pages & interfaces."
   },
   {
     "id": 5,
-    "title": "resbook",
+    "title": "ResBook",
     "infoText": "resbook.com",
-    "uri": "https://www.resbook.com",
+    "url": "https://www.resbook.com",
     "description": "New Zealand owned and operated cloud based reservation management system designed specifically for accommodation providers and Property Managers worldwide."
   }
 ]

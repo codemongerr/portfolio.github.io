@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {colorMap} from '../utils/helpers';
+// import {colorMap} from '../utils/helpers';
 
 export const StyledText = styled.p`
   ${({color, inline, italic}) => css`
@@ -18,7 +18,7 @@ export const StyledText = styled.p`
 
     ${color &&
     css`
-      color: ${colorMap(color)};
+      // color: colorMap(color);
     `}
   `}
 `;

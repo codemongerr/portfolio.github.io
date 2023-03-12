@@ -1,18 +1,38 @@
-import React from 'react';
-import {uid} from 'react-uid';
 import PropTypes from 'prop-types';
+import GridList from './GridList';
 import Section from './Section';
-import SectionItem from './SectionItem';
+import SectionDivider from './SectionDivider';
+import ContentItem from './ContentItem';
+import {prepareColorVar} from '../utils/helpers';
 
 function Skills({data}) {
   return (
-    <Section color="orange" heading="Area of expertise" id="expertise">
-      {data.map(skill => (
-        <SectionItem color="orange" key={uid(skill)} title={skill.title}>
-          {skill.list.join(', ')}
-        </SectionItem>
-      ))}
-    </Section>
+    <Section
+      color="warningAlt"
+      heading="Area of expertise"
+      id="expertise"
+      icon="tools"
+      content={
+        <GridList
+          xs={12}
+          sm={6}
+          lg={4}
+          data={data}
+          renderItem={({list, title}) => (
+            <ContentItem description={list.join(', ')} title={title} />
+          )}
+        />
+      }
+      divider={
+        <SectionDivider
+          colors={[
+            'var(--bg-main)',
+            prepareColorVar('warningAlt'),
+            'var(--bg-main)',
+          ]}
+        />
+      }
+    />
   );
 }
 

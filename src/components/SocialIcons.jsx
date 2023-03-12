@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import {uid} from 'react-uid';
 import Icon from './Icon';

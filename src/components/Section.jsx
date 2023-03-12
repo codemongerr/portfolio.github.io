@@ -1,30 +1,51 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  StyledSection,
-  StyledSectionContent,
-  StyledSectionHeading,
-} from './Section.styled';
+import Heading from './Heading';
+import Icon from './Icon';
+import SectionHeader from './SectionHeader';
+import SectionIcon from './SectionIcon';
+import StyledSection, {StyledSectionContent} from './Section.styled';
 
-function Section({children, color, heading, ...rest}) {
+function Section({color, content, divider, heading, icon, id}) {
   return (
-    <StyledSection color={color} {...rest}>
-      <StyledSectionHeading>{heading}</StyledSectionHeading>
-      <StyledSectionContent>{children}</StyledSectionContent>
+    <StyledSection color={color} id={id}>
+      <SectionHeader>
+        {icon && (
+          <SectionIcon color={color}>
+            <Icon name={icon} />
+          </SectionIcon>
+        )}
+        {heading && (
+          <Heading
+            as="h2"
+            color={color}
+            transform="capitalize"
+            gutterBottom={false}>
+            {heading}
+          </Heading>
+        )}
+      </SectionHeader>
+      <StyledSectionContent>
+        {divider}
+        {content}
+      </StyledSectionContent>
     </StyledSection>
   );
 }
 
 Section.propTypes = {
-  children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(['blue', 'green', 'orange', 'yellow', 'lightblue'])
-    .isRequired,
-  heading: PropTypes.string.isRequired,
+  divider: PropTypes.node,
+  color: PropTypes.string.isRequired,
+  content: PropTypes.node.isRequired,
+  heading: PropTypes.string,
+  icon: PropTypes.string,
   id: PropTypes.string,
 };
 
 Section.defaultProps = {
-  id: '',
+  divider: undefined,
+  heading: undefined,
+  icon: undefined,
+  id: undefined,
 };
 
 export default Section;

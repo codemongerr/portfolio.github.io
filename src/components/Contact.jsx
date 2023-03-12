@@ -1,21 +1,39 @@
-import React from 'react';
+import Card from './Card';
 import Section from './Section';
-import SectionItem from './SectionItem';
+import SectionDivider from './SectionDivider';
 import SocialIcons from './SocialIcons';
+import Text from './Text';
+import {prepareColorVar} from '../utils/helpers';
 
 function Contact() {
   return (
-    <Section color="yellow" heading="Get in touch" id="contact">
-      <SectionItem fluid color="yellow">
-        <p style={{marginTop: 0, marginBottom: 20, lineHeight: 1.6}}>
-          Have an awesome idea for a website or an app? Like to see it on web?
-          <br />
-          Lets get in touch and convert your rad idea into beautiful product for
-          the world out there.
-        </p>
-        <SocialIcons />
-      </SectionItem>
-    </Section>
+    <Section
+      color="warning"
+      heading="Get in touch"
+      id="contact"
+      icon="envelope"
+      content={
+        <Card>
+          <Text variant="subtitle1">
+            Have an awesome idea for a website or an app? Like to see it on web?
+            Lets get in touch and convert your rad idea into beautiful product
+            for the world out there.
+            <br />
+            <br />
+          </Text>
+          <SocialIcons />
+        </Card>
+      }
+      divider={
+        <SectionDivider
+          colors={[
+            'var(--bg-main)',
+            prepareColorVar('warning'),
+            'var(--bg-main)',
+          ]}
+        />
+      }
+    />
   );
 }
 

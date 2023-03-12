@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {colorMap} from '../utils/helpers';
+// import {colorMap} from '../utils/helpers';
 
 export const StyledSectionItemTitle = styled.h3`
   color: #808080;
@@ -35,7 +35,7 @@ export const StyledSectionItem = styled.div`
     ${StyledSectionItemTitle} {
       a,
       span {
-        color: ${colorMap(color)};
+        // color: colorMap(color);
       }
     }
   `}

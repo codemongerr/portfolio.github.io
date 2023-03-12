@@ -10,6 +10,23 @@ export const BannerContainer = styled.div`
     height: 100vh;
     color: ${theme.color.white};
   `}
+
+  &:after {
+    content: '';
+    height: 15%;
+    width: 100%;
+    pointer-events: none;
+    display: block;
+    background: linear-gradient(
+      0deg,
+      rgba(17, 24, 39, 1) 17%,
+      rgba(17, 17, 17, 0.2) 100%
+    );
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+  }
 `;
 
 // Creates the banner content section
@@ -17,7 +34,7 @@ export const BannerContent = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  font-size: 19px;
+  font-size: 16px;
   min-height: 90vh;
   overflow: hidden;
   padding: 3.5rem 75px 0 75px;

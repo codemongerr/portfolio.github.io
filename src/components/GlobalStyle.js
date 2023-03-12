@@ -1,6 +1,29 @@
-import {createGlobalStyle} from 'styled-components';
+import {createGlobalStyle, css} from 'styled-components';
+import bgpattern from '../assets/images/bg-pattern.svg';
+
+const variables = ({theme}) => css`
+  :root {
+    --base-gutter: 15px;
+    --base-spacing: 15px;
+    --base-color: ${theme.baseColor};
+    --base-font-size: ${theme.baseFontSize};
+    --base-line-height: ${theme.baseLineHeight};
+    --bg-main: ${theme.color.background.main};
+    --color-primary: ${theme.color.primary};
+    --color-primary-alt: ${theme.color.primaryAlt};
+    --color-secondary: ${theme.color.secondary};
+    --color-secondary-alt: ${theme.color.secondaryAlt};
+    --color-warning: ${theme.color.warning};
+    --color-warning-alt: ${theme.color.warningAlt};
+    --color-white: ${theme.color.white};
+    --color-selection: var(--color-primary-alt);
+    --font-family: ${theme.baseFont};
+    --font-family-alt: ${theme.fontSerifAlt};
+  }
+`;
 
 const GlobalStyle = createGlobalStyle`
+${variables}
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%
@@ -186,43 +209,33 @@ html {
 }
 
 html, body {
-  height: 100%;
+  // height: 100%;
   width: 100%;
 }
 
+
 body {
-  background-color: #0e0e0e;
+  background-color: var(--bg-main);
+  background-image: url(${bgpattern});
+  background-position: center;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  font: normal normal normal 16px/1.4 'Overpass Mono', Monaco,Consolas,monospace;
-  color: #808080;
+  font: normal normal normal var(--base-font-size)/var(--base-line-height) var(--font-family);
+  color: var(--base-color);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  position: relative;
 }
 
-::-ms-selection { 
-  color: #fff;
-  background-color: #41c46f;
-}
-
-::-moz-selection { 
-  color: #fff;
-  background-color: #41c46f;
-}
-
-::-webkit-selection { 
-  color: #fff;
-  background-color: #41c46f;
-}
 ::selection { 
   color: #fff;
-  background-color: #41c46f;
+  background-color: var(--color-selection);
 }
 
 img {
@@ -237,7 +250,7 @@ ol {
 }
 
 p {
-  margin: 10px 0;
+  margin: calc(var(--base-gutter) - 5px) 0;
 }
 
 label[for] {
@@ -285,7 +298,6 @@ code em,
 
 a {
   background: transparent;
-  color: ${props => props.theme.color.green};
 }
 
 @keyframes MoveUpInitial {
@@ -306,4 +318,3 @@ a {
 `;
 
 export default GlobalStyle;
-// background-color: #161616;

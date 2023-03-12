@@ -20,9 +20,9 @@ export const SocialIcon = styled.a`
   transition: color 0.3s, color 0.3s;
   display: inline-block;
   position: relative;
-  color: ${props => props.theme.color.white};
+  color: var(--color-white);
 
   &:hover {
-    color: ${props => props.theme.color.green};
+    color: var(--color-primary-alt);
   }
 `;

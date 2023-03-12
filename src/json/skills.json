@@ -1,23 +1,24 @@
 [
   {
     "id": 1,
-    "title": "front-end",
+    "title": "Front-End",
     "list": [
       "React",
       "Storybook",
       "JavaScript",
-      "BEM",
-      "SASS",
       "HTML5",
       "CSS",
-      "Responsive web design",
-      "Atomic design",
+      "BEM",
+      "SASS",
+      "Tailwind CSS",
+      "Material UI",
+      "Responsive design implementation",
       "jQuery"
     ]
   },
   {
     "id": 2,
-    "title": "back-end",
+    "title": "Back-End",
     "list": [
       "API development and integration",
       "PHP",
@@ -29,7 +30,7 @@
   },
   {
     "id": 3,
-    "title": "tools/platforms",
+    "title": "Tools / Platforms",
     "list": [
       "CI/CD",
       "Ansible",
