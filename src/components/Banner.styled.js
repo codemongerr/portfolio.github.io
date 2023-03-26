@@ -8,8 +8,12 @@ export const BannerContainer = styled.div`
     background: url(${src}) no-repeat center;
     background-size: cover;
     height: 100vh;
-    color: ${theme.color.white};
+    color: var(--color-white);
   `}
+
+  .__json-string__ {
+    color: var(--color-primary);
+  }
 
   &:after {
     content: '';
@@ -40,7 +44,7 @@ export const BannerContent = styled.div`
   padding: 3.5rem 75px 0 75px;
   position: relative;
   z-index: 3;
-  font-family: ${props => props.theme.fontSerifAlt};
+  font-family: var(--font-family-alt);
 
   code {
     font-size: 0.9em;

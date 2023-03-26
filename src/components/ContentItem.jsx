@@ -15,7 +15,7 @@ function ContentItem({description, title, url}) {
     <Card>
       <StyledContentItemInner>
         {title && (
-          <Heading as="h3" variant="h6" color="default" gutterBottom={false}>
+          <Heading as="h3" variant="h5" color="default" gutterBottom={false}>
             {title}
           </Heading>
         )}

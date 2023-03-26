@@ -278,22 +278,10 @@ pre {
 }
 
 code {
-  color: #737373;
-  background: 0;
   padding: 0;
   pre {
     font-family: 'Overpass Mono', Monaco,Consolas,monospace;
   }
-}
-
-.__json-key__{
-color: #ccc;
-}
-
-code em, 
-.__json-string__{
-  color: #83c487;
-  font-style: normal;
 }
 
 a {

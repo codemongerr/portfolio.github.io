@@ -2,22 +2,25 @@ import PropTypes from 'prop-types';
 import Card from './Card';
 import Icon from './Icon';
 import Text from './Text';
+import {StyledHighlightText} from './Testimonial.styled';
 
 function Testimonial({description, name, position}) {
   return (
     <Card>
       <Text as="div">
         <Text>
-          <Text as="span" color="secondaryAlt">
+          <StyledHighlightText>
             <Icon name={['fa', 'quote-left']} />
-          </Text>{' '}
+          </StyledHighlightText>{' '}
           {description}{' '}
-          <Text as="span" color="secondaryAlt">
+          <StyledHighlightText>
             <Icon name={['fa', 'quote-right']} />
-          </Text>
+          </StyledHighlightText>
         </Text>
-        <Text color="secondaryAlt">
-          - {name}, {position}
+        <Text>
+          <StyledHighlightText>
+            - {name}, {position}
+          </StyledHighlightText>
         </Text>
       </Text>
     </Card>
