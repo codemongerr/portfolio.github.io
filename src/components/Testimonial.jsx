@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import Card from './Card';
 import Icon from './Icon';
 import Text from './Text';
-import {StyledHighlightText} from './Testimonial.styled';
+import {StyledInnerContainer, StyledHighlightText} from './Testimonial.styled';
 
 function Testimonial({description, name, position}) {
   return (
     <Card>
-      <Text as="div">
-        <Text>
+      <StyledInnerContainer>
+        <Text italic>
           <StyledHighlightText>
             <Icon name={['fa', 'quote-left']} />
           </StyledHighlightText>{' '}
@@ -22,7 +22,7 @@ function Testimonial({description, name, position}) {
             - {name}, {position}
           </StyledHighlightText>
         </Text>
-      </Text>
+      </StyledInnerContainer>
     </Card>
   );
 }

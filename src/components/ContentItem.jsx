@@ -1,13 +1,11 @@
 import PropTypes from 'prop-types';
 import Card from './Card';
 import Heading from './Heading';
-import Icon from './Icon';
 import Link from './Link';
 import Text from './Text';
 import {
   StyledContentItemInner,
   StyledContentItemLink,
-  StyledContentItemLinkIcon,
 } from './ContentItem.styled';
 
 function ContentItem({description, title, url}) {
@@ -23,16 +21,14 @@ function ContentItem({description, title, url}) {
         {url && (
           <StyledContentItemLink>
             <Link
+              color="scheme"
               href={url}
               target="_blank"
-              underline="hover"
               rel="noopener noreferrer"
-              variant="body2">
+              size="body2"
+              variant="button">
               view project
             </Link>
-            <StyledContentItemLinkIcon>
-              <Icon name="arrow-right-long" />
-            </StyledContentItemLinkIcon>
           </StyledContentItemLink>
         )}
       </StyledContentItemInner>

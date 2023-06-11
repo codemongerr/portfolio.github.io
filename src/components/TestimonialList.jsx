@@ -15,7 +15,7 @@ function TestimonialList({data}) {
       content={
         <GridList
           xs={12}
-          // sm={6}
+          md={4}
           data={data}
           renderItem={({description, name, position}) => (
             <Testimonial

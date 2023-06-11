@@ -1,14 +1,20 @@
 [
   {
-    "id": 1,
-    "name": "Brian Walker",
-    "position": "Creative Director",
-    "description": "Having worked with Talwinder now for more than 10 years I can attest to his deep desire to not only deliver first-class products but to constantly increase his knowledge, skillset and experience. Working with Talwinder is always a pleasure and I can be confident that every project we work together on will be delivered on time and to a high standard. I would have no hesitation in recommending Talwinder to anyone considering employing his services."
+    "id": 3,
+    "name": "Monique Moss",
+    "position": "Director of Production",
+    "description": "We had the pleasure of collaborating with Talwinder on a large-scale website build, and it was a wonderful experience from start to finish. As a front-end developer, Talwinder was instrumental in delivering high-quality code that met our expectations. His exceptional communication skills made the entire process seamless, and we always knew where we stood in terms of progress. We look forward to working with him again in the future and highly recommend him to anyone looking for a skilled and reliable developer."
   },
   {
     "id": 2,
     "name": "Antony Zouch",
     "position": "Senior Project Manager",
     "description": "Talwinder's knowledge, work ethic and professionalism exceeds expectations. He took time to ensure that he understood the project as much as possible in a few calls and got straight into the work for us, as we had a tight deadline this was a life saver. His code is very well executed and he was always available to ensure that we had everything we needed when closing off the project."
+  },
+  {
+    "id": 1,
+    "name": "Brian Walker",
+    "position": "Creative Director",
+    "description": "Having worked with Talwinder now for more than 10 years I can attest to his deep desire to not only deliver first-class products but to constantly increase his knowledge, skillset and experience. Working with Talwinder is always a pleasure and I can be confident that every project we work together on will be delivered on time and to a high standard. I would have no hesitation in recommending Talwinder to anyone considering employing his services."
   }
 ]
