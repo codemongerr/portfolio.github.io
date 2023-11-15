@@ -27,8 +27,8 @@ function App() {
         <Container>
           <About />
           <Work data={projects} />
-          <Skills data={skills} />
           <TestimonialList data={reviews} />
+          <Skills data={skills} />
           <Contact />
         </Container>
       </ThemeProvider>

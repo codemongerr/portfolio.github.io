@@ -1,5 +1,12 @@
 [
   {
+    "id": 7,
+    "title": "NZ Collections",
+    "infoText": "app.nzcollections.co.nz",
+    "url": "https://app.nzcollections.co.nz/lodge/tenancy",
+    "description": "App for property managers and landlords to allow them to lodge debt associated with residential tenancies and appliance rentals, as well as general repayments of debts."
+  },
+  {
     "id": 2,
     "title": "Tenant Portal",
     "infoText": "tenant.tpsportal.co.nz",
@@ -33,12 +40,5 @@
     "infoText": "yha.co.nz",
     "url": "https://www.yha.co.nz",
     "description": "As a Front-end architect I was responsible for converting designs/concepts into responsive/adaptive web pages & interfaces."
-  },
-  {
-    "id": 5,
-    "title": "ResBook",
-    "infoText": "resbook.com",
-    "url": "https://www.resbook.com",
-    "description": "New Zealand owned and operated cloud based reservation management system designed specifically for accommodation providers and Property Managers worldwide."
   }
 ]
